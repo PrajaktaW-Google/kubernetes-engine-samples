@@ -1,0 +1,17 @@
+apiVersion: inference.networking.x-k8s.io/v1alpha2
+kind: InferenceModel
+metadata:
+  name: ${MODEL_NAME:-vllm-llama3-8b-instruct}
+  labels:
+    inference.networking.x-k8s.io/model-type: ${MODEL_TYPE:-llm}
+    inference.networking.x-k8s.io/framework: ${MODEL_FRAMEWORK:-vllm}
+spec:
+  modelSource:
+    repository: ${MODEL_REPOSITORY:-huggingface.co}
+    modelId: ${MODEL_ID:-meta-llama/Meta-Llama-3-8B-Instruct}
+    revision: ${MODEL_REVISION:-main}
+  resources:
+    requests:
+      nvidia.com/gpu: ${GPU_REQUEST:-1}
+    limits:
+      nvidia.com/gpu: ${GPU_LIMIT:-1}
