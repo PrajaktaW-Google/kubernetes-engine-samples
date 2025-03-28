@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# [START gke_aiml_infw_gw_infw_pool]
 apiVersion: inference.networking.x-k8s.io/v1alpha2
 kind: InferencePool
 metadata:
@@ -135,3 +136,4 @@ subjects:
 roleRef:
   kind: ClusterRole
   name: pod-read
+# [END gke_aiml_infw_gw_infw_pool]

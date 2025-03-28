@@ -12,6 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# [START gke_aiml_infw_gw_manifests]
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
@@ -533,3 +534,4 @@ spec:
     storage: true
     subresources:
       status: {}
+# [END gke_aiml_infw_gw_manifests]
