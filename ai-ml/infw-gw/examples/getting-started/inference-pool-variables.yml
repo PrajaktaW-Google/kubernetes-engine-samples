@@ -120,3 +120,4 @@ subjects:
 roleRef:
   kind: ClusterRole
   name: ${CLUSTER_ROLE_NAME:-pod-read}
+
