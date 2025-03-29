@@ -207,4 +207,4 @@ subjects:
 - kind: ServiceAccount
   name: horizontal-pod-autoscaler
   namespace: kube-system
-# [END gke_aiml_infw_adapter_new_resource_model]
+# [END gke_aiml_infw_gw_adapter_new_resource_model]
